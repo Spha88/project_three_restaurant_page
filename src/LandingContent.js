@@ -1,6 +1,6 @@
 const LandingContent =
     `
-            <div class="home-page">
+            
                 <div class="home-page-content">
                     <h1>The best Restaurant in Town</h1>
                     <p>
@@ -9,7 +9,7 @@ const LandingContent =
                         tempora explicabo, quasi deserunt illum omnis reiciendis delectus.
                     </p>
                 </div>
-            </div>
+           
 
         `
 

@@ -1,13 +1,6 @@
-// let Nav = `<nav class="nav">
-//                 <div class="logo">Eatlicious</div>
-//                 <ul class="nav-items">
-//                     <li class="nav-item">Home</li>
-//                     <li class="nav-item">Meals</li>
-//                     <li class="nav-item">Contact Us</li>
-//                 </ul>
-//             </nav>`
+import Router from './Router';
 
-function Nav(dom, navItemList) {
+function Nav(dom, navItemList, router) {
     let container = dom.getElementById('content');
     // Create nav
     let nav = dom.createElement('nav');
@@ -32,14 +25,25 @@ function Nav(dom, navItemList) {
             li.classList.add('nav-item');
             li.appendChild(textNode);
 
-            li.addEventListener('click', (li, e) => {
-                console.log(li, e);
-            })
+            li.addEventListener('click', () => Router(item, dom));
             list.appendChild(li);
         });
     }
 
     container.appendChild(nav);
+
+    // this is just a background at the top of the page covering the entire
+    // screen before scrolling
+    let contentBackground = dom.createElement('div');
+    contentBackground.classList.add('content-background');
+    let gradientOverlay = dom.createElement('div');
+    contentBackground.appendChild(gradientOverlay);
+    container.appendChild(contentBackground);
+
+    // this different page content will be displayed in this element
+    let contentContainer = dom.createElement('div');
+    contentContainer.setAttribute('id', 'page-content')
+    container.appendChild(contentContainer);
 }
 
 export default Nav;

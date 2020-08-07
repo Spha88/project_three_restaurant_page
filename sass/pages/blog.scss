@@ -1,0 +1,58 @@
+@import '../variables.scss';
+@import '../mixin.scss';
+
+.page-blog {
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+    padding: 2rem;
+    color: $color-font;
+    header {
+        @include background-gradient;
+        width: 100%;
+        padding: 3rem;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 3rem;
+        h1 {
+            font-size: 2em;
+        }
+        p {
+            font-size: 1.2em;
+            letter-spacing: 1px;
+            line-height: 2rem;
+        }
+
+    }
+    .blog-list {
+        overflow-y: hidden;
+        .blog {
+            display: flex;
+            margin-bottom: 3rem;
+            @include background-gradient;
+            .blog-image {
+                width: 40%;
+                height: 300px;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .blog-content {
+                width: 60%;
+                padding: 4rem;
+                h2 {
+                    margin: 0 0 10px;
+                }
+                p {
+                    margin: 0 0 10px;
+                    line-height: 25px;
+                }
+            }
+        }
+    }
+}

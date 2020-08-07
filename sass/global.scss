@@ -1,0 +1,38 @@
+@import './variables.scss';
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: $color-black;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+}
+
+#content {
+    position: relative;
+    display: block;
+    min-height: 120vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+footer {
+    padding: 5rem;
+    color: #fff;
+    width: 100%;
+    div {
+        text-align: center;
+        a, a:visited, a:focus, a:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+}
+
