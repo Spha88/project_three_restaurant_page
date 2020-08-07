@@ -1,12 +1,13 @@
-import PageLoad from './PageLoad';
+import LoadPage from './LoadPage';
+import Nav from './Nav';
+import { documentReady } from './utilities';
+let dom = null;
 
-var readyStateCheckInterval = setInterval(function () {
-    if (document.readyState === "complete") {
-        console.log(document.readyState);
-        clearInterval(readyStateCheckInterval);
-        PageLoad('content')
-    }
-}, 10);
 
-console.log(document.readyState);
 
+
+documentReady(() => {
+    Nav(document, ['home', 'meals', 'blog', 'contact us']);
+    LoadPage();
+
+})
