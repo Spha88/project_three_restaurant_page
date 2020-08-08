@@ -4,22 +4,37 @@
 .home-page-content {
     @include background-gradient;
     position: relative;
-    border: 1px solid black;
     border-radius: 5px;
     width: 60%;
     margin: 0 auto;
     padding: 5rem;
     color: $color-font;
+    @include media($tablet) {
+        width: 80%;
+        padding: 3rem;
+    }
+    @include media($mobile) {
+        width: 90%;
+        padding: 1.5rem;
+        text-align: center;
+    }
     h1 {
         text-align: center;
         font-size: 3rem;
         margin-top: 0;
+        @include media($tablet) {
+            font-size: 2rem;
+        }
     }
     p {
         font-size: 20px;
         line-height: 35px;
         margin-bottom: 0;
         letter-spacing: 1px;
+        @include media($tablet) {
+            font-size: initial;
+            line-height: 25px;
+        }
     }
     .svg-landing {
         position: absolute;

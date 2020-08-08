@@ -9,4 +9,4 @@ const LandingContent =
         </div>`
 
 
-export default LandingContent;
+export default LandingContent; 
