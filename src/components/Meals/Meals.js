@@ -33,7 +33,7 @@ function Meals(parent, document) {
                     </div>
                 </div>
                 `
-    )}
+    ).join('')}
         </div>
         `
 

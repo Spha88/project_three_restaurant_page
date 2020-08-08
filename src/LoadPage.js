@@ -1,8 +1,9 @@
-import LandingContent from './LandingContent';
+import Home from './components/Home/Home';
 
 function LoadPage() {
     let container = document.getElementById('page-content');
-    container.insertAdjacentHTML('beforeend', LandingContent);
+    Home(container);
+    // container.insertAdjacentHTML('beforeend', LandingContent);
 }
 
 export default LoadPage;

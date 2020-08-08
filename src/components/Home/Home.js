@@ -1,5 +1,5 @@
-const LandingContent =
-    `   <div class="home-page-content">
+const Home = parent => {
+    const template = `
             <h1>We eat green but not grass :)</h1>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, maxime. Unde nemo incidunt rerum
@@ -9,5 +9,12 @@ const LandingContent =
             <div class="call-to-action">
                 <button>Bookings <i class="material-icons">check_circle</i></button> <button>Find Us <i class="material-icons">near_me</i></button>
             </div>
-        </div>`
-export default LandingContent;
+    `
+    const container = document.createElement('DIV');
+    container.classList.add('home-page-content');
+    container.insertAdjacentHTML('beforeend', template);
+
+    parent.appendChild(container);
+}
+
+export default Home;

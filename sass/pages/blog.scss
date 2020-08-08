@@ -47,28 +47,14 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                background-size: cover !important;
                 img {
                     width: 100%;
                     height: auto;
-                }
-                @include media($laptop) {
-                    img {
-                        height: 100%;
-                    }
-                }
-                @include media($tablet) {
-                    img {
-                        width: auto;
-                        height: 290px;
-
-                    }
+                    opacity: 0;
                 }
                 @include media($mobile) {
                     width: 100%;
-                    img {
-                        width: 100%;
-                        height: auto;
-                    }
                 }
                 
             }

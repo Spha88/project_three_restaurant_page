@@ -41,8 +41,10 @@ function Nav(dom, navItemList) {
     // screen before scrolling
     let contentBackground = dom.createElement('div');
     contentBackground.classList.add('content-background');
+
     let gradientOverlay = dom.createElement('div');
     contentBackground.appendChild(gradientOverlay);
+
     container.appendChild(contentBackground);
 
     // the different page content will be displayed in this element

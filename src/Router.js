@@ -1,6 +1,6 @@
 import Meals from "./components/Meals/Meals";
 import LandingContent from './LandingContent';
-import Blog from './Blog';
+import Blog from './components/Blog/Blog';
 import Contact from "./ContactUs";
 import makeActive from './utilities/makeActive';
 
@@ -19,7 +19,7 @@ export default function Router(page, dom, event) {
             Meals(container, dom);
             return;
         case 'blog':
-            container.innerHTML = Blog;
+            Blog(container, dom);
             return;
         case 'contact us':
             container.innerHTML = Contact;
