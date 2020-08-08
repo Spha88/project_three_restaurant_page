@@ -1,6 +1,6 @@
 import Router from './Router';
 
-function Nav(dom, navItemList, router) {
+function Nav(dom, navItemList) {
     let container = dom.getElementById('content');
     // Create nav
     let nav = dom.createElement('nav');

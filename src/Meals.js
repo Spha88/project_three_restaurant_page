@@ -17,8 +17,14 @@ const Meals =
                     <div class="meal-description">
                         <h2>Pasta lacios</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, perspiciatis earum vero dolorem repudiandae eligendi, consequuntur dicta perferendis recusandae repellat sapiente quod dolores. Ea numquam temporibus nesciunt dolor nostrum aut.</p>
-                        <div class="meal-price">
-                            R850.00
+                        <div class="meal-meta-data">
+                            <div class="price">
+                                R250
+                            </div>
+                            <div class="buttons">
+                                <button>order</button>
+                                <button>info</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -29,8 +35,14 @@ const Meals =
                     <div class="meal-description">
                         <h2>Pasta lacios</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, perspiciatis earum vero dolorem repudiandae eligendi, consequuntur dicta perferendis recusandae repellat sapiente quod dolores. Ea numquam temporibus nesciunt dolor nostrum aut.</p>
-                        <div class="meal-price">
-                            R850.00
+                        <div class="meal-meta-data">
+                            <div class="price">
+                                R90
+                            </div>
+                            <div class="buttons">
+                                <button>order</button>
+                                <button>info</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -41,8 +53,14 @@ const Meals =
                     <div class="meal-description">
                         <h2>Pasta lacios</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, perspiciatis earum vero dolorem repudiandae eligendi, consequuntur dicta perferendis recusandae repellat sapiente quod dolores. Ea numquam temporibus nesciunt dolor nostrum aut.</p>
-                        <div class="meal-price">
-                            R850.00
+                        <div class="meal-meta-data">
+                            <div class="price">
+                                R100
+                            </div>
+                            <div class="buttons">
+                                <button>order</button>
+                                <button>info</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -53,8 +71,14 @@ const Meals =
                     <div class="meal-description">
                         <h2>Pasta lacios</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, perspiciatis earum vero dolorem repudiandae eligendi, consequuntur dicta perferendis recusandae repellat sapiente quod dolores. Ea numquam temporibus nesciunt dolor nostrum aut.</p>
-                        <div class="meal-price">
-                            R850.00
+                        <div class="meal-meta-data">
+                            <div class="price">
+                                R160
+                            </div>
+                            <div class="buttons">
+                                <button>order</button>
+                                <button>info</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -65,8 +89,14 @@ const Meals =
                     <div class="meal-description">
                         <h2>Pasta lacios</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, perspiciatis earum vero dolorem repudiandae eligendi, consequuntur dicta perferendis recusandae repellat sapiente quod dolores. Ea numquam temporibus nesciunt dolor nostrum aut.</p>
-                        <div class="meal-price">
-                            R850.00
+                        <div class="meal-meta-data">
+                            <div class="price">
+                                R60
+                            </div>
+                            <div class="buttons">
+                                <button>order</button>
+                                <button>info</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -77,8 +107,14 @@ const Meals =
                     <div class="meal-description">
                         <h2>Pasta lacios</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, perspiciatis earum vero dolorem repudiandae eligendi, consequuntur dicta perferendis recusandae repellat sapiente quod dolores. Ea numquam temporibus nesciunt dolor nostrum aut.</p>
-                        <div class="meal-price">
-                            R850.00
+                        <div class="meal-meta-data">
+                            <div class="price">
+                                R250
+                            </div>
+                            <div class="buttons">
+                                <button>order</button>
+                                <button>info</button>
+                            </div>
                         </div>
                     </div>
                 </div>

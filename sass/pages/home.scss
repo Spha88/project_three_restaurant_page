@@ -3,6 +3,7 @@
 
 .home-page-content {
     @include background-gradient;
+    position: relative;
     border: 1px solid black;
     border-radius: 5px;
     width: 60%;
@@ -19,5 +20,14 @@
         line-height: 35px;
         margin-bottom: 0;
         letter-spacing: 1px;
+    }
+    .svg-landing {
+        position: absolute;
+        top:-70px;
+        left: 50px;
+        width: 200px;
+        img {
+            width: 100%;
+        }
     }
 }

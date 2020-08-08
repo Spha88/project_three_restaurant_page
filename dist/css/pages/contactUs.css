@@ -1,0 +1,79 @@
+.page-contact {
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+  padding: 2rem;
+  color: #a0a8a2;
+}
+.page-contact header {
+  background: #072600;
+  background: radial-gradient(circle, rgba(7, 38, 0, 0.7987570028) 0%, black 100%);
+  width: 100%;
+  padding: 6rem 2rem;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.page-contact header h1 {
+  font-size: 2em;
+  margin-top: 0;
+}
+.page-contact header p {
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  line-height: 2rem;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.page-contact .form-container {
+  background: rgba(0, 0, 0, 0.801);
+  padding: 4rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.page-contact .form-container .svg {
+  width: 30%;
+  padding: 20px;
+}
+.page-contact .form-container .svg img {
+  width: 100%;
+}
+.page-contact .form-container form {
+  width: 60%;
+  padding: 20px;
+}
+.page-contact .form-container form input, .page-contact .form-container form textarea {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  margin-bottom: 1rem;
+  background: #000;
+  color: #a0a8a2;
+  border: 1px solid #072600;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 1.1rem;
+}
+.page-contact .form-container form input:focus, .page-contact .form-container form textarea:focus {
+  border: 2px solid #072600;
+  outline: none;
+}
+.page-contact .form-container form textarea {
+  width: 100%;
+  height: 200px;
+  resize: none;
+  color: #fff;
+}
+.page-contact .form-container form input[type=submit] {
+  width: auto;
+  cursor: pointer;
+  transition: all 1000ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.page-contact .form-container form input[type=submit]:hover {
+  background: #072600;
+  background: radial-gradient(circle, rgba(7, 38, 0, 0.7987570028) 0%, black 100%);
+}
+
+/*# sourceMappingURL=contactUs.css.map */
