@@ -3,7 +3,7 @@ const ContactUs = (parent) => {
         <header>
             <h1>Stay In Touch</h1>
             <p>
-                For table bookings, booking events and catering please contact us by sending a email in the form below.
+                For table bookings, booking events and catering please contact us by sending an email in the form below.
             </p>
         </header>
         <div class="form-container">

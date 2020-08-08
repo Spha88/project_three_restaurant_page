@@ -7,7 +7,8 @@ import makeActive from './utilities/makeActive';
 
 
 export default function Router(page, event) {
-    let container = document.getElementById('content').lastElementChild;
+    let container = document.getElementById('content').children[2];
+    console.dir(container);
 
     makeActive(event);
 
