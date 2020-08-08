@@ -62,6 +62,10 @@ footer div a, footer div a:visited, footer div a:focus, footer div a:hover {
   letter-spacing: 2px;
   cursor: pointer;
 }
+.nav ul li.active {
+  background: #072600;
+  background: radial-gradient(circle, rgba(7, 38, 0, 0.7987570028) 0%, black 100%);
+}
 
 .content-background {
   background: url("../assets/img/bg.jpg") center center no-repeat;

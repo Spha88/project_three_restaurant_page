@@ -25,7 +25,7 @@ function Nav(dom, navItemList) {
             li.classList.add('nav-item');
             li.appendChild(textNode);
 
-            li.addEventListener('click', () => Router(item, dom));
+            li.addEventListener('click', (currentElement, event) => Router(item, dom, currentElement, event));
             list.appendChild(li);
         });
     }

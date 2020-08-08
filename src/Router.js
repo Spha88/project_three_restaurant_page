@@ -3,9 +3,21 @@ import LandingContent from './LandingContent';
 import Blog from './Blog';
 import Contact from "./ContactUs";
 
-export default function Router(page, dom) {
+function makeActive(activeNavItem) {
+    let allNavItems = activeNavItem.parentElement.children;
+    // Remove the active class on all nav items
+    for (let i = 0; i < allNavItems.length; i++) {
+        allNavItems[i].classList.remove('active');
+    }
+    // Add active class on current/clicked nav item;
+    activeNavItem.classList.add('active');
+}
+
+export default function Router(page, dom, event) {
     let container = dom.getElementById('content').lastElementChild;
-    console.log(page);
+
+    makeActive(event.target);
+
     switch (page) {
         case 'home':
             container.innerHTML = LandingContent;
