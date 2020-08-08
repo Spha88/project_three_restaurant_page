@@ -3,18 +3,31 @@
 
 .nav {
     display: flex;
+    position: relative;
     padding: 5px 50px;
     justify-content: space-between;
     align-items: center;
     background-color: $color-black;
     color: $color-font;
-    // border-bottom: 2px solid $color-green;
-
+    // ====================
+    @include media($mobile){
+        padding: 5px 10px;
+    }
     .logo {
         text-transform: uppercase;
         font-weight: bold;
         letter-spacing: 3px;
         font-size: 25px;
+        @include media($tablet) {
+            font-size: 20px;
+        }
+        @include media($tablet) {
+            text-align: center;
+            padding-top:10px;
+        }
+        @include media($mobile) {
+            width: 100%;
+        }
     }
 
     ul {
@@ -22,7 +35,6 @@
         list-style-type: none;
         padding: 0;
         margin: 0;
-
         li {
             margin-left: 20px;
             text-transform: uppercase;
@@ -35,7 +47,27 @@
                 color: #fff;
                 font-weight: bold;
             }
+            @include media($tablet){
+                font-size: .9em;
+                margin-left: 15px;
+            }
+            @include media($mobile) {
+                margin: 0 20px 0 0;
+            }
         }
+
+        //===============================
+        @include media($mobile) {
+            position: absolute;
+            left: 0;
+            top: 45px;
+            padding: 0 10px;
+            background: $color-black;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
     }
     
 }
