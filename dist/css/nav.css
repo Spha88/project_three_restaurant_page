@@ -21,6 +21,7 @@
   font-weight: bold;
   letter-spacing: 3px;
   font-size: 25px;
+  cursor: pointer;
 }
 @media (max-width: 768px) {
   .nav .logo {

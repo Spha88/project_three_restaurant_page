@@ -6,6 +6,9 @@ const LandingContent =
                 accusantium voluptatem eaque. Amet aliquam obcaecati, natus repellendus fugit dolores quos ducimus unde
                 tempora explicabo, quasi deserunt illum omnis reiciendis delectus.
             </p>
+            <div class="call-to-action">
+                <button>Bookings <i class="material-icons">check_circle</i></button> <button>Find Us <i class="material-icons">near_me</i></button>
+            </div>
         </div>`
 
 

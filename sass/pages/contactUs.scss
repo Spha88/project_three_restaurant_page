@@ -89,7 +89,6 @@
             input[type="submit"] {
                 width: auto;
                 cursor: pointer;
-                @include transition;
                 &:hover {
                     @include background-gradient;
                 }
