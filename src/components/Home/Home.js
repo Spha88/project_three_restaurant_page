@@ -14,6 +14,8 @@ const Home = parent => {
     container.classList.add('home-page-content');
     container.insertAdjacentHTML('beforeend', template);
 
+    //empty the element and add current page content
+    parent.innerHTML = '';
     parent.appendChild(container);
 }
 

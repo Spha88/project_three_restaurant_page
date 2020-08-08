@@ -1,6 +1,6 @@
 import mealList from './MealsList';
 
-function Meals(parent, document) {
+function Meals(parent) {
 
     const pageContent = `
         <header>

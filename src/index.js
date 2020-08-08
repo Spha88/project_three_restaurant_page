@@ -1,8 +1,8 @@
 import LoadPage from './LoadPage';
 import Nav from './Nav';
-import { documentReady } from './utilities';
+import documentReady from './utilities/documentReadyCheck';
 
 documentReady(() => {
-    Nav(document, ['home', 'meals', 'blog', 'contact us']);
+    Nav(['home', 'meals', 'blog', 'contact us']);
     LoadPage();
 })

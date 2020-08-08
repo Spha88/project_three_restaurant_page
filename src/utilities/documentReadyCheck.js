@@ -8,4 +8,4 @@ function documentReady(code) {
 }
 
 
-export { documentReady };
+export default documentReady;

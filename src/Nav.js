@@ -1,28 +1,28 @@
 import Router from './Router';
 
-function Nav(dom, navItemList) {
-    let container = dom.getElementById('content');
+function Nav(navItemList) {
+    let container = document.getElementById('content');
     // Create nav
-    let nav = dom.createElement('nav');
+    let nav = document.createElement('nav');
     nav.classList.add('nav');
 
     // Create logo div
-    let logo = dom.createElement('div');
+    let logo = document.createElement('div');
     logo.classList.add('logo');
     logo.innerText = 'Eatilicious';
-    logo.addEventListener('click', e => Router('home', dom))
+    logo.addEventListener('click', e => Router('home'))
     nav.appendChild(logo); // add logo to nav
 
     // Create menu items
-    let list = dom.createElement('ul');
+    let list = document.createElement('ul');
     list.classList.add('nav-items');
     nav.appendChild(list); // add list to nav
 
     // create li's from the nav items array and add them to ul
     if (navItemList) {
         navItemList.forEach((item, index) => {
-            let li = dom.createElement('li');
-            let textNode = dom.createTextNode(item);
+            let li = document.createElement('li');
+            let textNode = document.createTextNode(item);
 
             // add active class to the first item - which is home
             index == 0 && li.classList.add('active');
@@ -30,7 +30,7 @@ function Nav(dom, navItemList) {
             li.classList.add('nav-item');
             li.appendChild(textNode);
 
-            li.addEventListener('click', e => Router(item, dom, event));
+            li.addEventListener('click', e => Router(item, event));
             list.appendChild(li);
         });
     }
@@ -39,16 +39,16 @@ function Nav(dom, navItemList) {
 
     // this is just a background at the top of the page covering the entire
     // screen before scrolling
-    let contentBackground = dom.createElement('div');
+    let contentBackground = document.createElement('div');
     contentBackground.classList.add('content-background');
 
-    let gradientOverlay = dom.createElement('div');
+    let gradientOverlay = document.createElement('div');
     contentBackground.appendChild(gradientOverlay);
 
     container.appendChild(contentBackground);
 
     // the different page content will be displayed in this element
-    let contentContainer = dom.createElement('div');
+    let contentContainer = document.createElement('div');
     contentContainer.setAttribute('id', 'page-content')
     container.appendChild(contentContainer);
 }

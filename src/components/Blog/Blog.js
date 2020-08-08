@@ -1,6 +1,6 @@
 import blogList from './BlogList';
 
-const Blog = (parent, document) => {
+const Blog = (parent) => {
     const template = `
         <div class="page-blog">
                 <header>

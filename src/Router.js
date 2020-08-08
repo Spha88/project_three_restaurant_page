@@ -1,30 +1,31 @@
 import Meals from "./components/Meals/Meals";
-import LandingContent from './LandingContent';
+import Home from './components/Home/Home';
 import Blog from './components/Blog/Blog';
-import Contact from "./ContactUs";
+import ContactUs from './components/ContactUs/ContactUs';
 import makeActive from './utilities/makeActive';
 
 
 
-export default function Router(page, dom, event) {
-    let container = dom.getElementById('content').lastElementChild;
+export default function Router(page, event) {
+    let container = document.getElementById('content').lastElementChild;
 
-    makeActive(event, dom);
+    makeActive(event);
 
     switch (page) {
         case 'home':
-            container.innerHTML = LandingContent;
+            Home(container)
             return;
         case 'meals':
-            Meals(container, dom);
+            Meals(container);
             return;
         case 'blog':
-            Blog(container, dom);
+            Blog(container);
             return;
         case 'contact us':
-            container.innerHTML = Contact;
+            ContactUs(container);
             return;
         default:
-            return console.lo('Go to home page');
+            Home(container)
+            return
     }
 }
