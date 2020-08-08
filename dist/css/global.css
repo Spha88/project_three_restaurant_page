@@ -1,6 +1,10 @@
 /* Break points for media queries */
+/*
+    Media Query
+*/
 * {
   box-sizing: border-box;
+  transition: all 1000ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 body {
@@ -21,6 +25,17 @@ h1, h2, h3, h4, h5, h6 {
   min-height: 120vh;
   width: 100%;
   overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  div[class^=page] {
+    padding: 1rem;
+  }
+}
+@media (max-width: 425px) {
+  div[class^=page] {
+    padding: 15px;
+  }
 }
 
 footer {

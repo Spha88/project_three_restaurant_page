@@ -16,7 +16,7 @@
   padding: 6rem 2rem;
   margin: auto;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 .page-meals header h1 {
   font-size: 2em;
@@ -30,6 +30,16 @@
   max-width: 700px;
   margin: 0 auto;
 }
+@media (max-width: 768px) {
+  .page-meals header {
+    padding: 4rem 2rem;
+  }
+  .page-meals header p {
+    font-size: 1em;
+    line-height: initial;
+    padding: 0 2rem;
+  }
+}
 .page-meals .meals-list {
   overflow-y: hidden;
   display: flex;
@@ -42,6 +52,17 @@
   background: radial-gradient(circle, rgba(7, 38, 0, 0.7987570028) 0%, black 100%);
   margin: 20px 0;
   padding-bottom: 1rem;
+}
+@media (max-width: 768px) {
+  .page-meals .meals-list .meal {
+    width: 48%;
+    margin: 10px 0;
+  }
+}
+@media (max-width: 425px) {
+  .page-meals .meals-list .meal {
+    width: 100%;
+  }
 }
 .page-meals .meals-list .meal .meal-image {
   width: 100%;
@@ -82,6 +103,9 @@
   cursor: pointer;
   background-color: #a0a8a2;
   color: #072600;
+}
+.page-meals .meals-list .meal .meal-meta-data .buttons button:hover {
+  background-color: #fff;
 }
 
 /*# sourceMappingURL=meals.css.map */

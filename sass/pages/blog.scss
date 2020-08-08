@@ -7,13 +7,6 @@
     margin: auto;
     padding: 2rem;
     color: $color-font;
-    @include transition;
-    @include media($tablet) {
-        padding: 1rem;
-    }
-    @include media($mobile) {
-        padding: 15px;
-    }
     header {
         @include background-gradient;
         width: 100%;
@@ -51,7 +44,6 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                @include transition;
                 img {
                     width: 100%;
                     height: auto;

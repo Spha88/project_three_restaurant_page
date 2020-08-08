@@ -37,12 +37,34 @@
   justify-content: space-around;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .page-contact .form-container {
+    padding: 2rem;
+  }
+}
+@media (max-width: 425px) {
+  .page-contact .form-container {
+    padding: 1rem;
+    flex-direction: column;
+  }
+}
 .page-contact .form-container .svg {
   width: 30%;
   padding: 20px;
 }
 .page-contact .form-container .svg img {
   width: 100%;
+}
+@media (max-width: 768px) {
+  .page-contact .form-container .svg {
+    width: 40%;
+  }
+}
+@media (max-width: 425px) {
+  .page-contact .form-container .svg {
+    width: 100%;
+    padding-bottom: 10px;
+  }
 }
 .page-contact .form-container form {
   width: 60%;
@@ -64,6 +86,11 @@
   border: 2px solid #072600;
   outline: none;
 }
+@media (max-width: 768px) {
+  .page-contact .form-container form input, .page-contact .form-container form textarea {
+    font-size: 1em;
+  }
+}
 .page-contact .form-container form textarea {
   width: 100%;
   height: 200px;
@@ -78,6 +105,12 @@
 .page-contact .form-container form input[type=submit]:hover {
   background: #072600;
   background: radial-gradient(circle, rgba(7, 38, 0, 0.7987570028) 0%, black 100%);
+}
+@media (max-width: 425px) {
+  .page-contact .form-container form {
+    width: 100%;
+    padding: 0;
+  }
 }
 
 /*# sourceMappingURL=contactUs.css.map */

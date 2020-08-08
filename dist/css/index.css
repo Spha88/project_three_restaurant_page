@@ -1,7 +1,11 @@
 /* Break points for media queries */
 /* Break points for media queries */
+/*
+    Media Query
+*/
 * {
   box-sizing: border-box;
+  transition: all 1000ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 body {
@@ -22,6 +26,17 @@ h1, h2, h3, h4, h5, h6 {
   min-height: 120vh;
   width: 100%;
   overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  div[class^=page] {
+    padding: 1rem;
+  }
+}
+@media (max-width: 425px) {
+  div[class^=page] {
+    padding: 15px;
+  }
 }
 
 footer {
@@ -152,7 +167,7 @@ footer div a, footer div a:visited, footer div a:focus, footer div a:hover {
   padding: 6rem 2rem;
   margin: auto;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 .page-meals header h1 {
   font-size: 2em;
@@ -166,6 +181,16 @@ footer div a, footer div a:visited, footer div a:focus, footer div a:hover {
   max-width: 700px;
   margin: 0 auto;
 }
+@media (max-width: 768px) {
+  .page-meals header {
+    padding: 4rem 2rem;
+  }
+  .page-meals header p {
+    font-size: 1em;
+    line-height: initial;
+    padding: 0 2rem;
+  }
+}
 .page-meals .meals-list {
   overflow-y: hidden;
   display: flex;
@@ -178,6 +203,17 @@ footer div a, footer div a:visited, footer div a:focus, footer div a:hover {
   background: radial-gradient(circle, rgba(7, 38, 0, 0.7987570028) 0%, black 100%);
   margin: 20px 0;
   padding-bottom: 1rem;
+}
+@media (max-width: 768px) {
+  .page-meals .meals-list .meal {
+    width: 48%;
+    margin: 10px 0;
+  }
+}
+@media (max-width: 425px) {
+  .page-meals .meals-list .meal {
+    width: 100%;
+  }
 }
 .page-meals .meals-list .meal .meal-image {
   width: 100%;
@@ -219,6 +255,9 @@ footer div a, footer div a:visited, footer div a:focus, footer div a:hover {
   background-color: #a0a8a2;
   color: #072600;
 }
+.page-meals .meals-list .meal .meal-meta-data .buttons button:hover {
+  background-color: #fff;
+}
 
 /* Break points for media queries */
 /*
@@ -230,17 +269,6 @@ footer div a, footer div a:visited, footer div a:focus, footer div a:hover {
   margin: auto;
   padding: 2rem;
   color: #a0a8a2;
-  transition: all 1000ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-@media (max-width: 768px) {
-  .page-blog {
-    padding: 1rem;
-  }
-}
-@media (max-width: 425px) {
-  .page-blog {
-    padding: 15px;
-  }
 }
 .page-blog header {
   background: #072600;
@@ -286,7 +314,6 @@ footer div a, footer div a:visited, footer div a:focus, footer div a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 1000ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .page-blog .blog-list .blog .blog-image img {
   width: 100%;
@@ -379,12 +406,34 @@ footer div a, footer div a:visited, footer div a:focus, footer div a:hover {
   justify-content: space-around;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .page-contact .form-container {
+    padding: 2rem;
+  }
+}
+@media (max-width: 425px) {
+  .page-contact .form-container {
+    padding: 1rem;
+    flex-direction: column;
+  }
+}
 .page-contact .form-container .svg {
   width: 30%;
   padding: 20px;
 }
 .page-contact .form-container .svg img {
   width: 100%;
+}
+@media (max-width: 768px) {
+  .page-contact .form-container .svg {
+    width: 40%;
+  }
+}
+@media (max-width: 425px) {
+  .page-contact .form-container .svg {
+    width: 100%;
+    padding-bottom: 5px;
+  }
 }
 .page-contact .form-container form {
   width: 60%;
@@ -406,6 +455,11 @@ footer div a, footer div a:visited, footer div a:focus, footer div a:hover {
   border: 2px solid #072600;
   outline: none;
 }
+@media (max-width: 768px) {
+  .page-contact .form-container form input, .page-contact .form-container form textarea {
+    font-size: 1em;
+  }
+}
 .page-contact .form-container form textarea {
   width: 100%;
   height: 200px;
@@ -420,6 +474,12 @@ footer div a, footer div a:visited, footer div a:focus, footer div a:hover {
 .page-contact .form-container form input[type=submit]:hover {
   background: #072600;
   background: radial-gradient(circle, rgba(7, 38, 0, 0.7987570028) 0%, black 100%);
+}
+@media (max-width: 425px) {
+  .page-contact .form-container form {
+    width: 100%;
+    padding: 0;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
