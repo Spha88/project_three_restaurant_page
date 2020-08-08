@@ -1,3 +1,5 @@
+/* Break points for media queries */
+/* Break points for media queries */
 * {
   box-sizing: border-box;
 }
@@ -35,14 +37,17 @@ footer div a, footer div a:visited, footer div a:focus, footer div a:hover {
   text-decoration: none;
 }
 
+/* Break points for media queries */
+/*
+    Media Query
+*/
 .nav {
   display: flex;
-  padding: 10px 50px;
+  padding: 5px 50px;
   justify-content: space-between;
   align-items: center;
   background-color: black;
   color: #a0a8a2;
-  border-bottom: 2px solid #072600;
 }
 .nav .logo {
   text-transform: uppercase;
@@ -61,10 +66,14 @@ footer div a, footer div a:visited, footer div a:focus, footer div a:hover {
   text-transform: uppercase;
   letter-spacing: 2px;
   cursor: pointer;
+  padding: 10px 0;
+  transition: all 1000ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .nav ul li.active {
   background: #072600;
   background: radial-gradient(circle, rgba(7, 38, 0, 0.7987570028) 0%, black 100%);
+  color: #fff;
+  font-weight: bold;
 }
 
 .content-background {
@@ -89,6 +98,10 @@ footer div a, footer div a:visited, footer div a:focus, footer div a:hover {
   overflow-y: visible;
 }
 
+/* Break points for media queries */
+/*
+    Media Query
+*/
 .home-page-content {
   background: #072600;
   background: radial-gradient(circle, rgba(7, 38, 0, 0.7987570028) 0%, black 100%);
@@ -121,6 +134,10 @@ footer div a, footer div a:visited, footer div a:focus, footer div a:hover {
   width: 100%;
 }
 
+/* Break points for media queries */
+/*
+    Media Query
+*/
 .page-meals {
   width: 100%;
   max-width: 1300px;
@@ -203,12 +220,27 @@ footer div a, footer div a:visited, footer div a:focus, footer div a:hover {
   color: #072600;
 }
 
+/* Break points for media queries */
+/*
+    Media Query
+*/
 .page-blog {
   width: 100%;
   max-width: 1300px;
   margin: auto;
   padding: 2rem;
   color: #a0a8a2;
+  transition: all 1000ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+@media (max-width: 768px) {
+  .page-blog {
+    padding: 1rem;
+  }
+}
+@media (max-width: 425px) {
+  .page-blog {
+    padding: 15px;
+  }
 }
 .page-blog header {
   background: #072600;
@@ -231,26 +263,59 @@ footer div a, footer div a:visited, footer div a:focus, footer div a:hover {
   overflow-y: hidden;
 }
 .page-blog .blog-list .blog {
+  position: relative;
   display: flex;
+  align-items: stretch;
   margin-bottom: 3rem;
   background: #072600;
   background: radial-gradient(circle, rgba(7, 38, 0, 0.7987570028) 0%, black 100%);
 }
+@media (max-width: 768px) {
+  .page-blog .blog-list .blog {
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 425px) {
+  .page-blog .blog-list .blog {
+    flex-direction: column;
+  }
+}
 .page-blog .blog-list .blog .blog-image {
   width: 40%;
-  height: 300px;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 1000ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .page-blog .blog-list .blog .blog-image img {
   width: 100%;
   height: auto;
 }
+@media (max-width: 1024px) {
+  .page-blog .blog-list .blog .blog-image img {
+    height: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .page-blog .blog-list .blog .blog-image img {
+    width: auto;
+    height: 290px;
+  }
+}
+@media (max-width: 425px) {
+  .page-blog .blog-list .blog .blog-image {
+    width: 100%;
+  }
+  .page-blog .blog-list .blog .blog-image img {
+    width: 100%;
+    height: auto;
+  }
+}
 .page-blog .blog-list .blog .blog-content {
   width: 60%;
   padding: 4rem;
+  transition: all 1000ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .page-blog .blog-list .blog .blog-content h2 {
   margin: 0 0 10px;
@@ -259,7 +324,26 @@ footer div a, footer div a:visited, footer div a:focus, footer div a:hover {
   margin: 0 0 10px;
   line-height: 25px;
 }
+@media (max-width: 1024px) {
+  .page-blog .blog-list .blog .blog-content {
+    padding: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .page-blog .blog-list .blog .blog-content p {
+    line-height: 20px;
+  }
+}
+@media (max-width: 425px) {
+  .page-blog .blog-list .blog .blog-content {
+    width: 100%;
+  }
+}
 
+/* Break points for media queries */
+/*
+    Media Query
+*/
 .page-contact {
   width: 100%;
   max-width: 1300px;

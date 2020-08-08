@@ -7,6 +7,13 @@
     margin: auto;
     padding: 2rem;
     color: $color-font;
+    @include transition;
+    @include media($tablet) {
+        padding: 1rem;
+    }
+    @include media($mobile) {
+        padding: 15px;
+    }
     header {
         @include background-gradient;
         width: 100%;
@@ -27,30 +34,70 @@
     .blog-list {
         overflow-y: hidden;
         .blog {
+            position: relative;
             display: flex;
+            align-items: stretch;
             margin-bottom: 3rem;
             @include background-gradient;
+            @include media($tablet) {
+                margin-bottom: 1rem;
+            }
+            @include media($mobile) {
+                flex-direction: column;
+            }
             .blog-image {
                 width: 40%;
-                height: 300px;
                 overflow: hidden;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                @include transition;
                 img {
                     width: 100%;
                     height: auto;
                 }
+                @include media($laptop) {
+                    img {
+                        height: 100%;
+                    }
+                }
+                @include media($tablet) {
+                    img {
+                        width: auto;
+                        height: 290px;
+
+                    }
+                }
+                @include media($mobile) {
+                    width: 100%;
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                
             }
             .blog-content {
                 width: 60%;
                 padding: 4rem;
+                @include transition;
                 h2 {
                     margin: 0 0 10px;
                 }
                 p {
                     margin: 0 0 10px;
                     line-height: 25px;
+                }
+                @include media($laptop) {
+                    padding: 2rem;
+                }
+                @include media($tablet) {
+                    p {
+                        line-height: 20px;
+                    }
+                }
+                @include media($mobile) {
+                    width: 100%;
                 }
             }
         }

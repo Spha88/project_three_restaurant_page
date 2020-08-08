@@ -17,15 +17,19 @@ function Nav(dom, navItemList) {
     list.classList.add('nav-items');
     nav.appendChild(list); // add list to nav
 
+    // create li's from the nav items array and add them to ul
     if (navItemList) {
-        navItemList.forEach(item => {
+        navItemList.forEach((item, index) => {
             let li = dom.createElement('li');
             let textNode = dom.createTextNode(item);
+
+            // add active class to the first item - which is home
+            index == 0 && li.classList.add('active');
 
             li.classList.add('nav-item');
             li.appendChild(textNode);
 
-            li.addEventListener('click', (currentElement, event) => Router(item, dom, currentElement, event));
+            li.addEventListener('click', e => Router(item, dom, event));
             list.appendChild(li);
         });
     }
@@ -40,7 +44,7 @@ function Nav(dom, navItemList) {
     contentBackground.appendChild(gradientOverlay);
     container.appendChild(contentBackground);
 
-    // this different page content will be displayed in this element
+    // the different page content will be displayed in this element
     let contentContainer = dom.createElement('div');
     contentContainer.setAttribute('id', 'page-content')
     container.appendChild(contentContainer);

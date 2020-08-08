@@ -1,11 +1,14 @@
+/* Break points for media queries */
+/*
+    Media Query
+*/
 .nav {
   display: flex;
-  padding: 10px 50px;
+  padding: 5px 50px;
   justify-content: space-between;
   align-items: center;
   background-color: black;
   color: #a0a8a2;
-  border-bottom: 2px solid #072600;
 }
 .nav .logo {
   text-transform: uppercase;
@@ -24,10 +27,14 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   cursor: pointer;
+  padding: 10px 0;
+  transition: all 1000ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .nav ul li.active {
   background: #072600;
   background: radial-gradient(circle, rgba(7, 38, 0, 0.7987570028) 0%, black 100%);
+  color: #fff;
+  font-weight: bold;
 }
 
 .content-background {
