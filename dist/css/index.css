@@ -81,15 +81,11 @@ footer div a, footer div a:visited, footer div a:focus, footer div a:hover {
     font-size: 20px;
   }
 }
-@media (max-width: 768px) {
-  .nav .logo {
-    text-align: center;
-    padding-top: 10px;
-  }
-}
 @media (max-width: 425px) {
   .nav .logo {
     width: 100%;
+    text-align: center;
+    padding-top: 10px;
   }
 }
 .nav ul {
@@ -354,6 +350,11 @@ footer div a, footer div a:visited, footer div a:focus, footer div a:hover {
   font-size: 1.2em;
   letter-spacing: 1px;
   line-height: 2rem;
+}
+@media (max-width: 768px) {
+  .page-blog header {
+    margin-bottom: 1rem;
+  }
 }
 .page-blog .blog-list {
   overflow-y: hidden;

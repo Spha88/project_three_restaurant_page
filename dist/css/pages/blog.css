@@ -26,6 +26,11 @@
   letter-spacing: 1px;
   line-height: 2rem;
 }
+@media (max-width: 768px) {
+  .page-blog header {
+    margin-bottom: 1rem;
+  }
+}
 .page-blog .blog-list {
   overflow-y: hidden;
 }

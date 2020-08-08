@@ -10,6 +10,7 @@ function Nav(dom, navItemList) {
     let logo = dom.createElement('div');
     logo.classList.add('logo');
     logo.innerText = 'Eatilicious';
+    logo.addEventListener('click', e => Router('home', dom))
     nav.appendChild(logo); // add logo to nav
 
     // Create menu items

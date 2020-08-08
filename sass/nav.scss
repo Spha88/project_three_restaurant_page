@@ -21,12 +21,10 @@
         @include media($tablet) {
             font-size: 20px;
         }
-        @include media($tablet) {
-            text-align: center;
-            padding-top:10px;
-        }
         @include media($mobile) {
             width: 100%;
+            text-align: center;
+            padding-top:10px;
         }
     }
 
